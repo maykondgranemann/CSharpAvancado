@@ -1,0 +1,23 @@
+Tipos
+ Valor -> Variavel aponta para o endereco onde existe o dado. Quando copiada é feito uma copia do dado e criado um novo espaco na memoria
+ Referencia -> Guarda referencias de enderecos. Quando copiada é feito um novo apontamento para o mesmo dado.
+
+
+Na pratica:
+ Quando copio por exemplo um "int idade" para "int nova_idade" é feita a copia do valor apenas e portanto posso alterar a nova_idade sem nenhum efeito na variavel idade
+ Já quando um objeto de classe, o novo dado aponta para o anterior, 
+ ex 
+ Aluno aluno1 = new Aluno();
+ Aluno aluno2 = new Aluno(); 
+ aluno2 = aluno1;
+ alunoDTO.nome = aluno1.nome;
+ Quando alterar o aluno2, sempre ira alterar o aluno1 tambem, pq as duas variaveis apontam para o mesmo endereco de memoria.
+
+
+ Garbage collector =  Coletor de lixo na momoria, serve para limpar as variaveis que nao sao mais usadas, ou qualquer outro espaco nao mais utilizado no programa
+ ele faz parte do .net Framework ou .net Core, quando roda programa nas linguagens C#, Vb.Net, F#  ele gerencia o que esta rodando.
+
+ O framework .net é uma plataforma, mas tambem é uma maquina virtual igual ao JVM do java. 
+ Quando compilo algo no C#, ele gera um programa em ByteCode. que é uma linguagem intermediaria que é lida pela maquina virtual do .Net Framework
+
+
