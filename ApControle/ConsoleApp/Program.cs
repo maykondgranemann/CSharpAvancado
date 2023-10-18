@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using ConsoleApp.POO;
 using ConsoleApp.Tipos._0_Valor;
 using ConsoleApp.Tipos._1_Referencia;
 
@@ -50,16 +51,54 @@ using ConsoleApp.Tipos._1_Referencia;
 //Console.WriteLine(contaClasse.Saldo);
 
 
-Pessoa pessoa = new Pessoa();
-pessoa.Nome = "Maykon";
-pessoa.Idade = 10;
-Console.WriteLine(pessoa);
+//Pessoa pessoa = new Pessoa();
+//pessoa.Nome = "Maykon";
+//pessoa.Idade = 10;
+//Console.WriteLine(pessoa);
 
-Pessoa pessoa1 = new Pessoa();
-pessoa1.Nome = "Maykon";
-pessoa1.Idade = 20;
-Console.WriteLine(pessoa1);
+//Pessoa pessoa1 = new Pessoa();
+//pessoa1.Nome = "Maykon";
+//pessoa1.Idade = 20;
+//Console.WriteLine(pessoa1);
 
-Pessoa pessoa2 = pessoa;
+//Pessoa pessoa2 = pessoa;
 
-Console.WriteLine(pessoa.Equals(pessoa1));
+
+//Console.WriteLine(pessoa.Equals(pessoa1));
+
+//Animal animal1 = new Animal();
+//Animal animal2 = new Animal();
+
+//Cachorro cachorro = new Cachorro();
+//cachorro.Nome = "Nick";
+//cachorro.Raca = "Vira-lata";
+//cachorro.Comer();
+//Console.WriteLine(cachorro);
+
+//Animal animal3 = new Cachorro();
+//animal3.Comer();
+
+//Cachorro cachorro2 = new Cachorro();
+//cachorro2.Nome = "Totó";
+//cachorro2.Raca = "Tomba";
+//Console.WriteLine(cachorro2);
+
+//Animal animal4 = cachorro2;
+
+//Console.WriteLine(animal4); 
+
+
+
+
+using ConsoleApp.POO;
+
+ContaCorrente cc1 = new ContaCorrente(100);
+decimal saldo = cc1.Sacar(10);
+Console.WriteLine(saldo);
+
+ContaPoupanca cp1 = new ContaPoupanca();
+saldo = cp1.Sacar(10);
+Console.WriteLine(saldo);
+
+
+
