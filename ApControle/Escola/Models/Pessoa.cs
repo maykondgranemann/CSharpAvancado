@@ -11,5 +11,10 @@ namespace Escola.Models
         public string Matricula { get; set; }
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
+
+        public override string ToString()
+        {
+            return base.ToString() + $";{this.Matricula};{this.Nome};{this.Sobrenome}";
+        }
     }
 }
